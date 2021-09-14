@@ -1,0 +1,13 @@
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+  server:
+    use-read-only-response-cache: false
+    eviction-interval-timer-in-ms: 5000
+  instance:
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 15
+ribbon:
+  eureka:
+    enabled: false

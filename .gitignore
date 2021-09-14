@@ -1,0 +1,9 @@
+# Default ignored files
+.idea
+target
+*.iml
+.project
+logs
+*.log
+*.class
+*.lst

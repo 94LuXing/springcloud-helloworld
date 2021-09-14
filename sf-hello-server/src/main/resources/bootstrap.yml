@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: sf-hello-server
+# 如果不走配置中心，注释下面
+  cloud:
+    config:
+      profile: dev
+      label: master
+      discovery:
+        enabled: true
+        service-id: sf-config-server
+server:
+  port: 9000
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+mybatis:
+  mapper-locations: "classpath:mapper/**/*Mapper.xml"
